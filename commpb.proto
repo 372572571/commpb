@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package commpb;
+
+message Status {
+  int32 code = 1;
+  string message = 2;
+  repeated string details = 3;
+};
+
+service users {
+  // 创建账号
+  rpc temp(Status) returns (Status);
+}

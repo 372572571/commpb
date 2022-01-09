@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-package error;
-
-message Status {
-  int32    code           = 1;
-  string   message        = 2;
-  repeated string details = 3;
-};
