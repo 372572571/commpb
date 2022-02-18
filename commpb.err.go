@@ -1,5 +1,7 @@
 package commpb
 
+import "fmt"
+
 func (v *Status) Error() string {
-	return v.Message
+	return fmt.Sprintf("%+v", *v)
 }
